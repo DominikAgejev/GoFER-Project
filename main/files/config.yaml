@@ -1,0 +1,10 @@
+jmbag: 0036537505
+http:
+    address: 127.0.0.1
+    port: 80
+users:
+    - name: dominikagejev
+      jmbag: 0036537505
+      password: lozinka # extra - use bcrypt or something similar
+    - name: admin
+      password: adminpwd # extra - isto kao i za prethodnog usera
