@@ -87,8 +87,8 @@ func authorize(r *http.Request) bool {
 	if err != nil {
 		log.Fatal(err)
 	}
-	decodedAuth := string(decoded[:])
 
+	decodedAuth := string(decoded[:])
 	var c Config
 	c.GetConfig()
 	
@@ -154,7 +154,6 @@ func sum(w http.ResponseWriter, r *http.Request) {
 }
 
 func checkForTwoStudents() bool {
-		// If number of users with non-empty jmbag (students) is less than 2 don't multiply
 	var c Config
 	c.GetConfig()
 	var students []User
@@ -212,7 +211,6 @@ func multiply(w http.ResponseWriter, r *http.Request) {
 }
 
 func jmbag(w http.ResponseWriter, r *http.Request) {
-	// Return the jmbag from the config file
 	var c Config
 	c.GetConfig()
 
