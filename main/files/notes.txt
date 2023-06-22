@@ -1,0 +1,24 @@
+Bilješke:
+
+Neke stvari nisu mi bile najjasnije. Stoga ću ovdje navesti kako sam razumio zadatak.
+
+/jmbag Ovaj endpoint ne treba biti zasticen sa user/password kombinacijom, dok ostali
+moraju biti odbijeni ako pristupni podaci nisu korektni
+-> Implementacija zaštite preko WWW-Authenticate i Authorization headera
+
+/multiply Za grupe s vise od jednog studenta
+-> Mora postojati barem dva korisnika s nepraznim jmbagom u config.yaml
+-> Inače ne množi
+
+Naknadno sam shvatio da ste mislili na studente u grupi, a ne na korisnike u config.yaml 🤦‍♂️
+
+Ostavit ću kod svejedno. 😁
+
+/0036391234 (vas jmbag)
+- Svaki student definira svoj tip gdje
+- POST prima podatke i sprema ih u student1.txt (proizvoljno
+ime) dokument na disk
+
+-> svaki POST prepisuje prethodni sadržaj datoteke
+
+Deindentirao sam posljednju liniju u config.yaml da sintaksa bude ispravna
