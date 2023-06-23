@@ -200,7 +200,7 @@ func multiply(w http.ResponseWriter, r *http.Request) {
 	calc := Calc{
 		A:      a,
 		B:      b,
-		Result: a + b,
+		Result: a * b,
 	}
 	
 	w.Header().Set("Content-Type", "application/json")
